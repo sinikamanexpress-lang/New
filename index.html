@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SINI KAMAN EXPRESS</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">SINI KAMAN</div>
+  <nav>
+    <a href="#">Accueil</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Galerie</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Logistique Nouvelle Génération</h1>
+  <p>Transit • Transport • Regroupement de colis</p>
+  <button>Demander un devis</button>
+</section>
+
+<section class="tracking">
+  <h2>Suivre un colis</h2>
+  <input id="trackInput" placeholder="Numéro de suivi">
+  <button onclick="track()">Suivre</button>
+  <p id="result"></p>
+</section>
+
+<section id="services" class="services">
+  <div class="card">Transit International</div>
+  <div class="card">Transport Rapide</div>
+  <div class="card">Regroupement de Colis</div>
+</section>
+
+<section class="stats">
+  <div class="stat" id="c1">0</div>
+  <div class="stat" id="c2">0</div>
+  <div class="stat" id="c3">0</div>
+</section>
+
+<section id="gallery" class="gallery">
+  <img src="img1.jpg">
+  <img src="img2.jpg">
+  <img src="img1.jpg">
+  <img src="img2.jpg">
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <p>Abidjan & Lomé</p>
+</section>
+
+<div class="whatsapp">💬</div>
+
+<script src="script.js"></script>
+</body>
+</html>
