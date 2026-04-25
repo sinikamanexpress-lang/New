@@ -1,0 +1,144 @@
+body{
+  margin:0;
+  font-family:Poppins;
+  background:#f4f7fb;
+  color:#111;
+}
+
+/* HEADER */
+header{
+  display:flex;
+  justify-content:space-between;
+  padding:20px 40px;
+  background:white;
+  position:fixed;
+  width:100%;
+  z-index:1000;
+}
+
+.logo{
+  font-family:Orbitron;
+  animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+  from{ text-shadow:0 0 5px #00c896; }
+  to{ text-shadow:0 0 20px #00c896; }
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  background:linear-gradient(135deg,#0f2027,#2c5364);
+  color:white;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero h1{
+  font-family:Orbitron;
+  font-size:3em;
+}
+
+.hero button{
+  padding:15px 30px;
+  background:#ff7a00;
+  border:none;
+  border-radius:30px;
+  box-shadow:0 0 20px #ff7a00;
+  cursor:pointer;
+}
+
+/* TRACKING */
+.tracking{
+  text-align:center;
+  padding:80px;
+}
+
+.tracking input{
+  padding:15px;
+  border-radius:30px;
+  border:1px solid #ccc;
+}
+
+.tracking button{
+  padding:15px;
+  border:none;
+  background:#00c896;
+  color:white;
+  border-radius:30px;
+}
+
+/* SERVICES */
+.services{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  padding:80px;
+}
+
+.card{
+  background:white;
+  padding:40px;
+  border-radius:20px;
+  transition:0.3s;
+  box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 0 30px #00c896;
+}
+
+/* STATS */
+.stats{
+  display:flex;
+  justify-content:space-around;
+  background:#0f2027;
+  color:white;
+  padding:60px;
+}
+
+.stat{
+  font-size:2em;
+  font-family:Orbitron;
+}
+
+/* GALLERY */
+.gallery{
+  display:flex;
+  gap:20px;
+  padding:50px;
+  overflow-x:auto;
+}
+
+.gallery img{
+  width:300px;
+  border-radius:20px;
+  transition:0.4s;
+}
+
+.gallery img:hover{
+  transform:scale(1.1);
+}
+
+/* CONTACT */
+.contact{
+  padding:80px;
+  text-align:center;
+}
+
+/* WHATSAPP */
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  padding:15px;
+  border-radius:50%;
+  color:white;
+  font-size:20px;
+}
